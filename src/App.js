@@ -1,5 +1,5 @@
 import { Console } from "@woowacourse/mission-utils";
-import { add } from "./calculator.js";
+import { add } from "./calculator/add.js";
 
 class App {
   async run() {
@@ -12,7 +12,7 @@ class App {
       Console.print("결과 : 0");
       return;
     }
-    
+
 try {
       const result = add(input);
       Console.print(`결과 : ${result}`);
