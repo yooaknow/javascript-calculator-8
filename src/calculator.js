@@ -16,6 +16,9 @@ export function add(input) {
       if (Number.isNaN(num)) {
         throw new Error("숫자만 입력 가능합니다.");
       }
+      if (num < 0) {
+        throw new Error("음수는 허용되지 않습니다.");
+      }
       return num;
     });
 
@@ -31,6 +34,9 @@ export function add(input) {
     const num = Number.parseInt(t, 10);
     if (Number.isNaN(num)) {
       throw new Error("숫자만 입력 가능합니다.");
+    }
+    if (num < 0) {
+      throw new Error("음수는 허용되지 않습니다.");
     }
     return num;
   });
