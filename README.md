@@ -1,4 +1,4 @@
-# 🧮 문자열 덧셈 계산기 (javascript-calculator-precourse)
+# 문자열 덧셈 계산기 (javascript-calculator-precourse)
 
 
 ## 💡 왜 구현을 해야 하는가
@@ -22,7 +22,10 @@
 ## ✅ 구현 체크리스트 (기능 단위)
 
 ### 1️.입력 처리
-- [ ] 사용자에게 문자열을 입력받는다. 
+- [x] 사용자에게 문자열을 입력받는다. 
+→ @woowacourse/mission-utils의 Console.readLineAsync()로 사용자 입력 처리
+→ 입력 안내 문구 출력 및 입력값 출력으로 흐름 확인
+
 - [ ] 입력이 **빈 문자열(`""`)**이면 `0`을 반환한다.  
   - 예: `"" → 0`
 - [ ] 입력 앞뒤 공백은 제거한다. (필요 시)
