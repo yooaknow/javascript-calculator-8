@@ -18,6 +18,7 @@ try {
       Console.print(`결과 : ${result}`);
     } catch (error) {
       Console.print(`[ERROR] ${error.message}`);
+      throw new Error(`[ERROR] ${error.message}`); 
     }
   }
 }
