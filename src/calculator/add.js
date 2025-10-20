@@ -1,4 +1,5 @@
 import { parseInput } from "./parser.js";
+import { ERR } from "./errors.js";
 
 export function add(input) {
   if ((input ?? "").trim() === "") return 0;
@@ -12,7 +13,7 @@ export function add(input) {
       !Number.isSafeInteger(acc) ||
       !Number.isSafeInteger(acc + n)
     ) {
-      throw new Error("안전한 정수 범위를 초과했습니다.");
+      throw new Error(ERR.UNSAFE);
     }
     acc += n;
   }
